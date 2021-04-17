@@ -81,7 +81,7 @@
 	}
 
 /*		Mobile View		*/
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 468px) {
 		
     .header a {
 		float: none;
