@@ -1,0 +1,286 @@
+* {box-sizing: border-box;}
+
+/*-------Navigation-------*/
+.header {
+  overflow: hidden;
+  background-color: #f1f1f1;
+  padding: 20px 40px;
+  width: 100%;
+  z-index: 20;
+  position: fixed;
+}
+
+.header a {
+  float: left;
+  color: black;
+  text-align: center;
+  padding: 15px;
+  text-decoration: none;
+  font-size: 18px; 
+  line-height: 25px;
+  border-radius: 10px;
+}
+
+.header a.logo {
+  font-size: 25px;
+  font-weight: bold;
+}
+
+.header a:hover {
+  background-color: black;
+  color: white;
+}
+
+.header a.active {
+  background-color: black;
+  color: white;
+}
+
+.header-right {
+  float: right;
+}
+
+
+  /*-------Slider-------*/
+  #slider
+  {
+	  width: 100%;
+	  header: 70%;
+  }
+  .carousel-caption
+  {
+	  top: 50%;
+	  transform: translateY(-50%);
+	  bottom: initial!important;
+  }
+  .carousel-caption h5
+  {
+	  color: #fff;
+	  font-size: 80px;
+      text-shadow:
+      -2px -2px 0 #000,
+      2px -2px 0 #000,
+      -2px 2px 0 #000,
+      2px 2px 0 #000; 
+  }
+  
+  /*----------------About me----------------*/
+  #about-me
+  {
+	  padding: 40px 0;
+	  background: #efefef;
+  }
+  .part1
+  {
+	  margin: 10px auto;
+	  display: inline;
+	  float: left;
+	  width: 100%;
+	  background-color: gray ;
+	  transition: 0.5S;
+  }
+  .part1:hover{
+	  box-shadow: 0 5px 30px #085274;
+  }
+  .title
+  {
+	  background-color: black;
+	  display: inline;
+	  float: left;
+	  padding: 10px 5px;
+	  text-align: center;
+	  width: 100%;
+	  height: 115px;
+  }
+  .title h2
+  {
+	  color: #fff;
+	  font-size: 26px;
+	  font-weight: bold;
+	  margin-bottom: 5px;
+	  padding: 5px;
+	  text-transform: uppercase;
+  }
+  .content
+  {
+	  float: left;
+	  width: 100%;
+	  height: 365px;
+	  padding: 20px 20px;
+	  text-align: justify;
+	  font-size: 16px;
+	  border-bottom: 1px solid #efefef ;
+	  padding: 15px 10px;
+  }
+  
+    /*--------Skills--------*/
+  #skills
+  {
+	  background-image: linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.8)),url(#);
+	  background-size: cover;
+	  background: black;
+	  background-position: center;
+	  color: white !important;
+	  background-attachment: fixed;
+	  padding-top: 50px;
+	  padding-bottom: 50px;
+  }
+  #skills h1
+  {
+	  text-align: center;
+	  color: white!important;
+	  padding-bottom: 10px;
+  }
+  #skills h1::after
+  {
+	  content: '';
+	  background: white;
+	  color: black;
+	  display: block;
+	  height: 3px;
+	  width: 170px;
+	  margin: 20px auto 5px;
+  }
+  .skills
+  {
+	  margin-top: 40px;
+  }
+  .icon
+  {
+	  font-size: 40px;
+	  margin: 20px auto;
+	  padding: auto;
+	  height: 65px ;
+	  width: 65px ;
+	  border: 2px solid white;
+	  border-radius: 50%;
+  }
+  
+  #skills p
+  {
+	  font-size: 18px;
+	  margin-top: 20px;
+	  color: white;
+  }
+  .skills .col-md-4:hover{
+	  background: #909090;
+	  border-radius: 15px;
+	  cursor: pointer;
+	  transition: 0.7s;
+  }
+	
+	/*		Laptop View		*/
+	@media only screen and (max-width: 992px) {
+	
+		/*-------Slider-------*/
+		.carousel-caption h5
+		{
+			font-size: 50px; 
+		}
+	  
+		/*----------------About me----------------*/
+		
+		.content {
+			font-size: 15px;
+		}
+	  
+		/*--------Skills--------*/
+		
+		#skills h3 {
+			font-size: 20px;
+			text-align: center;
+		}	
+		.icon {
+			font-size: 35px;
+			margin: 20px auto;
+			height: 64px ;
+			width: 64px ;
+		}
+	  
+		#skills p
+		{
+			font-size: 15px;
+			margin-top: 20px;
+		}
+		
+ }
+	
+	/*		Tablet View		*/
+	@media only screen and (max-width: 768px) {
+		
+    .header a {
+		float: none;
+		display: block;
+		text-align: center;
+    }
+  
+	.header-right {
+		float: none;
+	}
+		
+		/*-------Slider-------*/
+		
+		#slider {
+			padding-top: 260px
+		}
+		.carousel-caption h5
+		{
+			font-size: 40px; 
+		}
+	  
+		/*----------------About me----------------*/
+		
+		.content {
+			font-size: 15px;
+		}
+	  
+		/*--------Skills--------*/
+		
+		.icon {
+			font-size: 35px;
+			margin: 20px auto;
+			height: 64px ;
+			width: 64px ;
+		}
+	  
+		#skills p
+		{
+			font-size: 18px;
+			margin-top: 20px;
+		}
+		
+ }
+ 
+ /*		Mobile View		*/
+	@media screen and (max-width: 500px) {
+		
+    .header a {
+		float: none;
+		display: block;
+		text-align: left;
+		font-size: 15px;
+		padding-bottom: 10px;
+    }
+  
+	.header-right {
+		float: none;
+	}
+	
+		
+		/*-------Slider-------*/
+		#slider {
+			padding-top: 240px;
+		}
+		.carousel-caption h5
+		{
+			font-size: 40px; 
+		}
+	  
+		/*----------------About me----------------*/
+		
+		.content {
+			font-size: 15px;
+		}
+		
+ }
+ 
