@@ -278,6 +278,9 @@
 	  
 		/*----------------About me----------------*/
 		
+		.title {
+			font-size: 18px;
+		}
 		.content {
 			font-size: 15px;
 		}
@@ -310,8 +313,11 @@
 	  
 		/*----------------About me----------------*/
 		
+		.title {
+			font-size: 17px;
+		}
 		.content {
-			font-size: 15px;
+			font-size: 13px;
 		}
 		
  }
