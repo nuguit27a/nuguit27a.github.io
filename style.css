@@ -252,13 +252,14 @@
  }
  
  /*		Mobile View		*/
-	@media screen and (max-width: 468px) {
+	@media screen and (max-width: 480px) {
 		
     .header a {
 		float: none;
 		display: block;
 		text-align: left;
 		font-size: 10px;
+		color: blue;
 		padding-bottom: 5px;
     }
   
