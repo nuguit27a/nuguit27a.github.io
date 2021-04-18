@@ -1,4 +1,3 @@
-@import url('https://fonts.googleapis.com/css?family=Roboto:700&display=swap');
 *{
 	padding: 0;
 	margin: 0;
@@ -47,56 +46,34 @@
 	text-align: center;
 	padding: 30px 100px;
 }
-.btn{
-  padding: 10px 20px;
-  cursor: pointer;
-  margin: 10px;
-  transition: 0.8s;
-  position: relative;
-  overflow: hidden;
+.buttons button{
+	margin-left: 25px;
+	height: 50px;
+	width: 150px;
+	font-size: 18px;
+	font-weight: 600;
+	color: white;
+	background: black;
+	outline: none;
+	cursor: pointer;
+	border: 2px solid white;
+	border-radius: 25px;
+	transition: .7s;
 }
-.btn1,.btn3{
-  color: White;
+.buttons .btn2{
+	border-radius: 1px;
+	font-style: italic;
+	color: black;
+	background: white;
+	border: 2px solid black;
 }
-.btn2{
-  color: black;
-}
-.btn1:hover,.btn3:hover{
-  color: white;
-}
-.btn2:hover:hover{
-  color: black;
-}
-.btn::before{
-  content: "";
-  position: absolute;
-  left: 0;
-  width: 100%;
-  height: 0%;
-  background: black;
-  z-index: -1;
-  transition: 0.8s;
-}
-.btn1::before,.btn2::before{
-  top: 0;
-  border-radius: 0 0 50% 50%;
-}
-.btn3::before{
-  bottom: 0;
-  border-radius: 50% 50% 0 0;
-}
-.btn2::before{
-  height: 180%;
-}
-.btn1:hover::before,.btn3:hover::before{
-  height: 180%;
-}
-.btn2:hover::before {
-  height: 0%;
+.buttons .btn3 {
+	background: url(https://media.istockphoto.com/photos/fire-isolated-over-black-background-picture-id113494458?k=6&m=113494458&s=612x612&w=0&h=Bp0YBsMtxSQsnIWILRxs7JYdxYNW4IZMri5zAgRFEag=);
 }
 .buttons button:hover{
-	background: white;
+	background: #626262;
 	color: black;
+	border: 2px solid #262626;
 }
 
 @media screen and (max-width: 768px) {
@@ -121,8 +98,4 @@
 	font-size: 16px;
 }
 }
-
-
-
-
 
