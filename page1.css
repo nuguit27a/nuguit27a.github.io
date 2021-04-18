@@ -176,14 +176,14 @@
 	}
  
 	/*		Mobile View		*/
-	@media screen and (max-width: 500px) {
+	@media screen and (max-width: 480px) {
 		
     .header a {
 		float: none;
 		display: block;
 		text-align: left;
-		font-size: 15px;
-		padding-bottom: 10px;
+		font-size: 13px;
+		padding-bottom: 3px;
 		}
   
 	.header-right {
@@ -199,7 +199,7 @@
 	/*		Slider		*/
 	
 	#slider h5{
-			font-size: 40px;
+			font-size: 25px;
 	}
 		
  }
