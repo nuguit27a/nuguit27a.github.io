@@ -259,7 +259,7 @@
 		display: block;
 		text-align: left;
 		font-size: 13px;
-		padding-bottom: 3px;
+		padding-bottom: 5px;
     }
   
 	.header-right {
@@ -269,7 +269,7 @@
 		
 		/*-------Slider-------*/
 		#slider {
-			padding-top: 240px;
+			padding-top: 220px;
 		}
 		.carousel-caption h5
 		{
