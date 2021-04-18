@@ -223,14 +223,15 @@
 	#FnH {
 		padding-top: 160px;
 		}	
-	.container {
-		font-size: 11px;
+	.container p{
+		font-size: 5px;
 	}
+	
 		
 	/*		Slider		*/
 	
 	#slider h5{
-			font-size: 20px;
+		font-size: 20px;
 	}
 		
  }
