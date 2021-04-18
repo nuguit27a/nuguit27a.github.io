@@ -203,6 +203,35 @@
 	}
 		
  }
+	
+	
+	@media screen and (max-width: 320px) {
+		
+    .header a {
+		float: none;
+		display: block;
+		text-align: left;
+		font-size: 13px;
+		padding-bottom: 5px;
+		}
+  
+	.header-right {
+		float: none;
+		}
+		
+	/*		Favorites		*/
+	#FnH {
+			padding-top: 240px;
+			font-size: 20px;
+		}	
+		
+	/*		Slider		*/
+	
+	#slider h5{
+			font-size: 20px;
+	}
+		
+ }
  
  
 
