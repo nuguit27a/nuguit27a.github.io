@@ -1,0 +1,259 @@
+*{
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+
+}
+body{
+  height: 100%;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background: linear-gradient(rgba(70,29,18,0.7),rgba(245,165,116,0.7));
+}
+
+/*      = = = = = = NAV BAR = = = = = = =       */
+
+nav{
+  z-index: 40;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  background: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)), url(https://static.wikia.nocookie.net/my-hero-academia-fanon/images/3/3b/Flames.png/revision/latest?cb=20190112010359) no-repeat;
+  height: 80px;
+  width: 100%;
+}
+label.logo{
+  color: white;
+  font-size: 35px;
+  line-height: 80px;
+  padding: 0 100px;
+  font-weight: bold;
+}
+nav ul{
+  float: right;
+  margin-right: 20px;
+}
+nav ul li{
+  display: inline-block;
+  line-height: 80px;
+  margin: 0 5px;
+}
+nav ul li a{
+  margin-right: 20px;
+  color: white;
+  border: 1px solid white;
+  background: black;
+  font-size: 17px;
+  padding: 7px 13px;
+  border-radius: 5px;
+}
+a.active,a:hover{
+  background: white;
+  color: black;
+  transition: .5s;
+}
+.checkbtn{
+  font-size: 30px;
+  color: white;
+  float: right;
+  line-height: 80px;
+  margin-right: 40px;
+  cursor: pointer;
+  display: none;
+}
+#check{
+  display: none;
+}
+
+.dropbtn {
+  margin-right: 20px;
+  background-color: black;
+  border: 1px solid white;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  padding: 8px 13px;
+  border-radius: 5px;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 143px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  text-decoration: none;
+  display: block;
+  background-color: black;
+  border: 1px solid white;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  padding: 8px 13px;
+  border-radius: 5px;
+}
+
+.dropdown-content a:hover {
+  background-color: #fff;
+  color: black;
+  border: 1px solid black;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown:hover .dropbtn {
+  background-color: white;
+  color: black;
+}
+
+
+
+/*      = = = = = = FAVORITES/HOBBIES = = = = = = =       */
+
+.favs {
+  width: 90%;
+  margin: auto;
+  padding-top: 40px;
+  color: #803922;
+  top: 50%;
+  left: 50%;
+  text-align: center;
+}
+
+.favs h1 {
+  color: white;
+  font-size: 62px;
+  font-weight: 600px; 
+}
+
+.favs p {
+  margin: 10px 0 40px;
+  font-size: 25px;
+  color: #fff;
+}
+
+.row {
+  padding-top: 40px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.fav-col img {
+  width: 250px; height: 337px; object-fit: cover;
+}
+
+.fav-col {
+  width: 90%;
+  flex-basis: 31%;
+  background: #A54C16;
+  border-radius: 10px;
+  margin-bottom: 5%;
+  padding: 30px 20px;
+  box-sizing: border-box;
+  transition: .7s;
+}
+
+  .fav-col h3 {
+    color: #fff;
+    font-size: 23px;
+    margin: 10px 0
+  }
+  .fav-col p {
+    margin: 15px 30px;
+    font-size: 18px;
+    color: #F3A7EA;
+    text-align:center;
+  }
+
+  .fav-col:hover {
+    box-shadow: 0 0 20px 0 rgba(142,5,128,10.6);
+  }
+
+
+/*      = = = = = = RESPONSIVE BAR = = = = = = =       */
+
+@media (max-width: 952px){
+  label.logo{
+    font-size: 30px;
+    padding-left: 50px;
+  }
+  nav ul li a{
+    font-size: 16px;
+  }
+}
+
+
+@media (max-width: 858px){
+  .checkbtn{
+    display: block;
+  }
+  ul{
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background: #262622;
+    top: 80px;
+    left: -100%;
+    text-align: center;
+    transition: all .5s;
+    z-index: 40;
+  }
+  nav ul li{
+    display: block;
+    margin: 30px 0;
+    line-height: 30px;
+  }
+  nav ul li a{
+    font-size: 20px;
+    padding: 10px 180px;
+  }
+  a:hover,a.active{
+    background: white;
+    color: black;
+    border: 1px solid black;
+  }
+  #check:checked ~ ul{
+    left: 0;
+  }
+  .dropbtn {
+    left: 0;
+    padding: 10px 148px;
+  }
+  .dropdown-content {
+  min-width: 412px;
+  }
+
+/*      = = = = = = HOBBIES/FAVORITES = = = = = = =       */
+
+  .row {
+    flex-direction: column;
+  }
+   .fav-col img {
+  width: 337px; height: 250px; object-fit: cover;
+}
+  .favs {
+    margin: auto;
+      padding-top: 10px;
+}
+  .favs h1 {
+    font-size: 25px;
+  }
+  .favs p {
+    font-size: 18px;
+    margin-bottom: auto;
+  }
