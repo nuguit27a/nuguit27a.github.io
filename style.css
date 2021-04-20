@@ -458,7 +458,10 @@ a.active,a:hover{
 }
 
 @media screen and (max-width: 500px) {
-
+  label.logo{
+    font-size: 23px;
+    padding-left: 20px;
+  }
   /*      = = = = = = SLIDER = = = = = = =       */
   
   #slides .slide {
