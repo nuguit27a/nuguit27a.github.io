@@ -180,6 +180,8 @@ p {
 	font-size: 17px;
 }
 
+.hide {display: none;}
+
 .GNED01 {
 	background: #96EAFE;
 }
@@ -295,3 +297,6 @@ p {
   	font-size: 12px;
   	padding: 10px;
   }
+
+  .hide {display: initial;}
+  .show {display: none;}
