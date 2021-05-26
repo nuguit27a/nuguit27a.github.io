@@ -5,155 +5,165 @@
 	<meta name="viewport" content="width=device-width, initial=scale=1.0">
 	<link rel="icon" href="favicon.ico" type="image/x-icon">
 	<link href="style.css" rel="stylesheet">
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+	<script src="https://use.fontawesome.com/119ea6e5d3.js"></script>
+	<!--	https://fontawesome.com/v4.7.0/icons/	-->
 </head>
 <body>
-	
-	<!--      = = = = = = NAV BAR = = = = = = =       -->
-	<!-- Credits: https://www.codingnepalweb.com/2020/04/responsive-menu-bar-in-html-css.html for the IDEA -->
-	 
-	<nav>
-	    <input type="checkbox" id="check">
-	    	<label for="check" class="checkbtn">
-	        	<i class="fas fa-bars"></i>
-	      	</label>
-	    <label class="logo">Alfred Nuguit</label>
-	    <ul>
-		    <li><a class="active" href="#">Home</a></li>
-		    <div class="dropdown">
-			  	<button class="dropbtn">Future Activities</button>
-			  	<div class="dropdown-content">
-			  	<a href="activity4.html">Buttons</a>
-			  	<a href="activity5.html">Schedule</a>
-			  	<a href="#">Unavailable</a>
-			  	<a href="#">Unavailable</a>
-			  	</div>
+
+			<!-- Navigation Bar -->
+		<div class="nav">
+			<input type="checkbox" id="check">
+				<label for="check" class="checkbtn">
+				    <i class="fa fa-bars" aria-hidden="true"></i>
+				</label>
+			<!-- Side Navigation -->
+
+			<div class="sidenav">
+				<p><span>►&nbsp;</span>Alfred Nuguit</p>
+
+				<a href="./index.html">Home</a>
+			  	<a href="./page1.html">Page1</a>
+			  	<ul>
+			    	<li>
+			      		<a>Activities</a>
+			      		<ul>
+				        	<li><a href="./activity4.html">Buttons</a></li>
+				        	<li><a href="./activity5.html">Schedule</a></li>
+				        	<li><a href="./Error.html">Unavailable</a></li>
+			      		</ul>
+			    	</li>
+			  	</ul>
+			  	<a href="./Error.html">Unavailable</a>
 			</div>
-			<li><a href="page1.html">Page 1</a></li>
-		</ul>
-	</nav>
-
-	
-	<!--      = = = = = = SLIDER = = = = = = =       -->
-	<!-- Credits https://www.youtube.com/watch?v=1CZhGDU5cWM for the Idea -->
-
-	<section id="Slider">
-		<div id="slider">
-		   	<input type="radio" name="slider" id="slide1" checked>
-		   	<input type="radio" name="slider" id="slide2">
-		   	<input type="radio" name="slider" id="slide3">
-		   	<input type="radio" name="slider" id="slide4">
-		   	<div id="slides">
-		      	<div id="overflow">
-		         	<div class="inner">
-		            	<div class="slide slide_1">
-			               	<div class="slide-content">
-			                  	<h2>HELLO!</h2>
-			               	</div>
-		            	</div>
-		            	<div class="slide slide_2">
-			               	<div class="slide-content">
-			                  	<h2>WELCOME TO MY PAGE!</h2>
-			               	</div>
-		            	</div>
-		            	<div class="slide slide_3">
-		               		<div class="slide-content">
-		                  		<h2>KNOW MORE ABOUT ME!</h2>
-		               		</div>
-		            	</div>
-		            	<div class="slide slide_4">
-		               		<div class="slide-content">
-		                  		<h2>LET'S GO!</h2>
-		               		</div>
-		            	</div>
-		         	</div>
-		      	</div>
-		   	</div>
-		   	<div id="controls">
-		      	<label for="slide1"></label>
-		      	<label for="slide2"></label>
-		      	<label for="slide3"></label>
-		      	<label for="slide4"></label>
-		   	</div>
-		   	<div id="bullets">
-		      	<label for="slide1"></label>
-		      	<label for="slide2"></label>
-		      	<label for="slide3"></label>
-		      	<label for="slide4"></label>
-		   	</div>
+				
 		</div>
-	</section>
 
-	<!--      = = = = = = BASIC INFO = = = = = = =       -->
+		<!-- Main Content -->
 
-	<section class="info">
-	<div class="binfo">
-		<h1>About this Website</h1>
-		<p>There are lot of things I want to know about <abbr title="Hypertext Markup Language">HTML</abbr> and <abbr title="Cascading Stylesheet">CSS</abbr> so I search on many websites just to do things like navigation bar, sliders etc. and the output is this.</p>
-		<a href="#rowx" class="click">Know me!</a>
-	</div>
+		<div class="laman">
+			<!--      = = = = = = SLIDER = = = = = = =       -->
+			<!-- Credits https://www.youtube.com/watch?v=1CZhGDU5cWM for the Idea -->
 
-	<div id="rowx" class="row">
-		<div class="info-col">
-			<h3>Personal</h3>
-			<p>My name is Alfred J. Nuguit <br>
-			My birthday is August 27, 2001. <br>
-			I live in Imus, Cavite. <br>
-			 <br>
-			When I am a child, I want to become an Architect. <br>
-			Become an Architect is still my dream. <br>
-			But when I knew what <abbr title="Information Technology">IT</abbr> does,<br>
-			I suddenly thought of becoming IT as well.
-			</p>
-		</div>
-		<div class="info-col">
-			<h3>Education</h3>
-			<p>I study Kinder on Bucandala Day Care Center. <br>
-				I finished elementary on Bucandala Elementary School.<br>
-				I finished junior highschool in  <abbr title="Imus National High School">INHS</abbr>-Main. <br>
-				I study <abbr title="Technical Vocational">TechVoc</abbr> with the strand of programming and animation in <abbr title="Asian Institure of Science and Technology">AISAT</abbr> Dasmariñas. <br>
-				Cavite State University is my second choice in College. <br>
-				I got a low grade but still passed in Polythecnic University of the Philippines.
-			</p>
-		</div>
-		<div class="info-col">
-			<h3>Family</h3>
-			<p>My mother is a housewife. <br>
-				My father was a messenger, now he is retired. <br>
-				I have 3 siblings. <br>
-				I am the third one. <br>
-				My two brothers finished in their studies and now working. <br>
-			</p>
-		</div>
-	</div>
+			<section id="Slider">
+				<div id="slider">
+				   	<input type="radio" name="slider" id="slide1" checked>
+				   	<input type="radio" name="slider" id="slide2">
+				   	<input type="radio" name="slider" id="slide3">
+				   	<input type="radio" name="slider" id="slide4">
+				   	<div id="slides">
+				      	<div id="overflow">
+				         	<div class="inner">
+				            	<div class="slide slide_1">
+					               	<div class="slide-content">
+					                  	<h2>HELLO!</h2>
+					               	</div>
+				            	</div>
+				            	<div class="slide slide_2">
+					               	<div class="slide-content">
+					                  	<h2>WELCOME TO MY PAGE!</h2>
+					               	</div>
+				            	</div>
+				            	<div class="slide slide_3">
+				               		<div class="slide-content">
+				                  		<h2>KNOW MORE ABOUT ME!</h2>
+				               		</div>
+				            	</div>
+				            	<div class="slide slide_4">
+				               		<div class="slide-content">
+				                  		<h2>LET'S GO!</h2>
+				               		</div>
+				            	</div>
+				         	</div>
+				      	</div>
+				   	</div>
+				   	<div id="controls">
+				      	<label for="slide1"></label>
+				      	<label for="slide2"></label>
+				      	<label for="slide3"></label>
+				      	<label for="slide4"></label>
+				   	</div>
+				   	<div id="bullets">
+				      	<label for="slide1"></label>
+				      	<label for="slide2"></label>
+				      	<label for="slide3"></label>
+				      	<label for="slide4"></label>
+				   	</div>
+				</div>
+			</section>
 
-	</section>
+			<!--      = = = = = = BASIC INFO = = = = = = =       -->
 
-	<!--      = = = = = = SKILLS = = = = = = =       -->
-
-	<section class="skills">
-		<h1>Skills</h1>
-	<div class="skillrow">
-		<div class="row-skills">
-			<div class="skills-col text-center">
-					<h3>Coding/Programming</h3>
-					<p>I know basics in C++, C, Python, Java, HTML and CSS.</p>	
-			</div>	
-						
-			<div class="skills-col text-center">
-					<h3>Typing Skills</h3>
-					<p>I can write almost hundred words in a minute.</p>
+			<section class="info">
+			<div class="binfo">
+				<h1>About this Website</h1>
+				<p>There are lot of things I want to know about HTML and CSS so I search on many websites just to do things like navigation bar, sliders etc. and the output is this.</p>
+				<a href="#rowx" class="click">Know me!</a>
 			</div>
-						
-			<div class="skills-col text-center">
-					<h3>Well-Organize</h3>
-					<p>Able to plan things carefully and keep things neat.</p>
-			</div>
-		</div>
-	</div>
-	</section>
-					
 
+			<div id="rowx" class="row">
+				<div class="info-col">
+					<h3>Personal</h3>
+					<p>My name is Alfred J. Nuguit <br>
+					My birthday is August 27, 2001. <br>
+					I live in Imus, Cavite. <br>
+					 <br>
+					When I am a child, I want to become an Architect. <br>
+					Become an Architect is still my dream. <br>
+					But when I knew what Information Technology does,<br>
+					I suddenly thought of becoming IT as well.
+					</p>
+				</div>
+				<div class="info-col">
+					<h3>Education</h3>
+					<p>I study Kinder on Bucandala Day Care Center. <br>
+						I finished elementary on Bucandala Elementary School.<br>
+						I finished junior highschool in  Imus National High School-Main. <br>
+						I study Technical Vocational with the strand of programming and animation in Asian Institure of Science and Technology - Dasmariñas. <br>
+						Cavite State University is my second choice in College. <br>
+						I got a low grade but still passed in Polythecnic University of the Philippines.
+					</p>
+				</div>
+				<div class="info-col">
+					<h3>Family</h3>
+					<p>My mother is a housewife. <br>
+						My father was a messenger, now he is retired. <br>
+						I have 3 siblings. <br>
+						I am the third one. <br>
+						My two brothers finished in their studies and now working. <br>
+					</p>
+				</div>
+			</div>
+
+			</section>
+
+			<!--      = = = = = = SKILLS = = = = = = =       -->
+
+			<section class="skills">
+				<h1>Skills</h1>
+			<div class="skillrow">
+				<div class="row-skills">
+					<div class="skills-col text-center">
+							<h3>Coding and Programming</h3>
+							<p>I know basics in C++, C, Python, Java, HTML and CSS.</p>	
+					</div>	
+								
+					<div class="skills-col text-center">
+							<h3>Typing Skills</h3>
+							<p>I can write almost hundred words in a minute.</p>
+					</div>
+								
+					<div class="skills-col text-center">
+							<h3>Well-Organize</h3>
+							<p>Able to plan things carefully and keep things neat.</p>
+					</div>
+				</div>
+			</div>
+			</section>
+
+		</div>
+
+	</div>
+		
 
 	<!--      = = = = = = ANOTHER SECTION = = = = = = =       -->
 

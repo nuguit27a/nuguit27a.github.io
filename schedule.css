@@ -1,301 +1,272 @@
-@import url('https://fonts.googleapis.com/css2?family=Courier+Prime:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Antonio&family=PT+Serif&family=Source+Sans+Pro:wght@300&display=swap');
+
+/*
+  font-family: 'Antonio';
+  font-family: 'PT Serif';
+  font-family: 'Source Sans Pro';
+*/
 
 * {
-	padding: 0;
-	margin: 0;
-	text-decoration: none;
-	list-style: none;
-	box-sizing: border-box;
-	font-family: 'Courier Prime', monospace;
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
 }
 
-body {
-	background: #CB70E1;
-}
+/*      SIDEBAR     */
 
-/*      = = = = = = NAV BAR = = = = = = =       */
-
-nav{
-  position: -webkit-sticky;
-  position: sticky;
-  top: 0;
-  background: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7));
-  height: 80px;
-  width: 100%;
-  z-index: 40;
-}
-label.logo{
+/* LOGO */
+p {
   color: white;
-  font-size: 35px;
-  line-height: 80px;
-  padding: 0 100px;
+  font-size: 26px;
+  margin: 30px 20px 60px 40px;
   font-weight: bold;
+  display: inline-flex;
+  font-family: 'Antonio', sans-serif;
 }
-nav ul{
-  float: right;
-  margin-right: 20px;
+
+span {
+  color: red;
 }
-nav ul li{
-  display: inline-block;
-  line-height: 80px;
-  margin: 0 5px;
-}
-nav ul li a{
-  margin-right: 20px;
-  color: white;
-  border: 1px solid white;
-  background: black;
-  font-size: 17px;
-  padding: 7px 13px;
-  border-radius: 5px;
-}
-a.active,a:hover{
-  background: white;
-  color: black;
-  transition: .5s;
-}
+
 .checkbtn{
+  line-height: 80px;
   font-size: 30px;
   color: white;
-  float: right;
-  line-height: 80px;
-  margin-right: 40px;
+  margin: auto 30px;
   cursor: pointer;
   display: none;
 }
+
 #check{
   display: none;
 }
 
-.dropbtn {
-  margin-right: 20px;
-  background-color: black;
-  border: 1px solid white;
-  color: white;
-  font-size: 16px;
-  cursor: pointer;
-  padding: 8px 13px;
-  border-radius: 5px;
+.sidenav {
+  height: 100%; /* Full-height: remove this if you want "auto" height */
+  width: 250px; /* Set the width of the sidebar */
+  position: fixed; /* Fixed Sidebar (stay in place on scroll) */
+  z-index: 10; /* Stay on top */
+  top: 0; /* Stay at the top */
+  left: 0;
+  background-color: #303030; /* Black */
+  overflow-x: hidden; /* Disable horizontal scroll */
 }
 
-.dropdown {
-  position: relative;
-  display: inline-block;
-}
-
-.dropdown-content {
-  display: none;
-  position: absolute;
-  background-color: #f9f9f9;
-  min-width: 190px;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-  z-index: 10;
-}
-
-.dropdown-content a {
+.sidenav a {
+  margin-right: 50px;
+  min-width: 250px;
   text-decoration: none;
-  display: block;
-  background-color: black;
-  border: 1px solid white;
   color: white;
-  font-size: 16px;
-  cursor: pointer;
-  padding: 8px 13px;
-  border-radius: 5px;
+  font-size: 20px;
+  padding: 15px;
+  display:block;
 }
 
-.dropdown-content a:hover {
-  background-color: #fff;
-  color: black;
-  border: 1px solid black;
+.sidenav a:hover {border-bottom: 1px solid red;}
+ul {
+  display: inline;
+  margin: 0;
+  padding: 0;
 }
 
-.dropdown:hover .dropdown-content {
-  display: block;
+ul li {display: inline-block;}
+ul li:hover {background: #555;}
+ul li:hover ul {display: block;}
+ul li ul {
+  position: absolute;
+  width: 250px;
+  display: none;
 }
 
-.dropdown:hover .dropbtn {
-  background-color: white;
-  color: black;
+ul li ul li { 
+  background: #555; 
+  display: block; 
 }
 
-/*		TABLE		*/
+ul li ul li a {display:block !important;} 
+ul li ul li:hover {background: #303030;}
 
-
-.taas {
-	width: 100%;
-	font-size: 70px;
-	text-align: center;
-}
-
-.sy {
-	margin-bottom: 30px;
-	font-size: 20px;
-	font-weight: bold;
-	color: black;
-}
-
-table {
-	padding: 20px 25px 20px 25px;
-	margin: 40px auto 30px auto;
-	width: 95%;
-	background: rgba(0,0,0,0.5);
-	border-radius: 25px;
-}
-
-th {
-	height: 40px;
-	text-align: center;
-	background: orange;
-	min-width: 30px;
-	max-width: 31px;
-}
-
-tr td {
-	height: 30px;
-	margin: 20px;
-	text-align: center;
-	min-width: 10px;
-	max-width: 15px;
-	background: white;
-	font-size: 20px;
-	border-radius: 5px;
-	transition: 0.6s;
-}
-
-tr td:hover	{
-	background: transparent;
-	outline: 5px solid black;
-	border-radius: 10px;
-	text-shadow: 0 0 3px #FFFFFF;
-}
-
-.time {
-	text-align: right;
-	background: #c0c0c0;
-	padding-right: 30px;
-}
-
-p {
-	font-size: 17px;
-}
-
-.hide {display: none;}
-
-.GNED01 {
-	background: #96EAFE;
-}
-
-.GNED03 {
-	background: #9BFE96;
-}
-
-.GNED12 {
-	background: #FE1D07;
-	color: white;
-}
-
-.FITT2 {
-	background: #FAEB4D;
-}
-
-.GNED06 {
-	background: #F5A22A;
-}
-
-.DCIT23 {
-	background: #239513;
-	color: white;
-}
-
-.ITEC50 {
-	background: #FFB7F7;
-}
-
-.DCIT21 {
-	background: #AD9B81;
-}
-
-.DCIT22 {
-	background: #505AFF;
-	color: white;
-}
-
-/*      = = = = = = RESPONSIVE = = = = = = =       */
-
-@media (max-width: 952px){
-  label.logo{
-    font-size: 24px;
-    padding-left: 30px;
-  }
-  nav ul li a{
-    font-size: 16px;
-  }
+/*      .nav     */
+.nav {
+  margin-left: 250px;
+  width: 100%;
+  top: 0;
+  height: 80px;
+  background: #303030;
+  position: fixed; /* Fixed .navbar (stay in place on scroll) */
+  z-index: 9; /* Stay on top */
+  border-bottom: 1px solid white; 
 }
 
 
-@media (max-width: 858px){
-  .checkbtn{
+/* Style page content */
+.laman {
+    background: #202020;
+    color: #fff;
+    margin-left: 250px; /* Same as the width of the sidebar */
+    padding: 130px 20px 30px 20px;
+    font-family: 'PT Serif', serif;
+    justify-content: all;
+}
+
+
+/* On smaller screens, where height is less than 450px, change the style of the sidebar (less padding and a smaller font size) */
+@media (max-width: 768px){
+
+  .checkbtn {
     display: block;
+    transition: left .6s;
   }
-  ul{
-    position: fixed;
-    width: 100%;
-    height: 100vh;
-    background: #262622;
-    top: 80px;
-    left: -100%;
-    text-align: center;
-    transition: all .5s;
-    z-index: 40;
+  
+  .sidenav {
+    left: -200px;
+    width: 200px;
+    transition: left .6s;
   }
-  nav ul li{
-    display: block;
-    margin: 30px 0;
-    line-height: 30px;
+  .sidenav a { font-size: 15px;}
+  p { font-size: 18px; 
+    margin-bottom: 20px;}
+
+  .laman {margin-left: 0;}
+  .nav {margin-left: 0;}
+
+   #check:checked ~  .sidenav{left: 0;}
+   #check:checked ~  .checkbtn{margin-left: 220px;}
+   #check:checked ~  .laman{left: 200px;}
+
   }
-  nav ul li a{
-    font-size: 20px;
-    padding: 10px 130px;
-  }
-  a:hover,a.active{
-    background: white;
-    color: black;
-    border: 1px solid black;
-  }
-  #check:checked ~ ul{
-    left: 0;
-  }
-  .dropbtn {
-    left: 0;
-    padding: 10px 80px;
-  }
-  .dropdown-content {
-  min-width: 325px;
-  }
+
+
+
+  /*    TABLE   */
 
 
   .taas {
-  	font-size: 40px;
+    width: 100%;
+    font-size: 70px;
+    text-align: center;
   }
 
   .sy {
-  	font-size: 15px;
+    margin-bottom: 30px;
+    font-size: 20px;
+    font-weight: bold;
+    color: #ccc;
+  }
+
+  table {
+    padding: 20px;
+    margin: 40px auto 30px auto;
+    width: 95%;
+    background: rgba(0,0,0,0.5);
+    border-radius: 25px;
+  }
+
+  th {
+    height: 40px;
+    text-align: center;
+    background: orange;
+    min-width: 30px;
+    max-width: 31px;
+  }
+
+  tr td {
+    color: black;
+    height: 30px;
+    margin: 20px;
+    text-align: center;
+    min-width: 10px;
+    max-width: 15px;
+    background: white;
+    font-size: 20px;
+    border-radius: 5px;
+    transition: 0.6s;
+  }
+
+  tr td:hover {
+    background: transparent;
+    outline: 5px solid black;
+    border-radius: 10px;
+    text-shadow: 0 0 3px #FFFFFF;
+  }
+
+  .time {
+    text-align: right;
+    background: #c0c0c0;
+    padding-right: 30px;
+  }
+
+  tr td p {
+    font-size: 17px;
+    color: black;
+    text-align: center;
+  }
+
+  .hide {display: none;}
+
+  .GNED01 {
+    background: #96EAFE;
+  }
+
+  .GNED03 {
+    background: #9BFE96;
+  }
+
+  .GNED12 {
+    background: #FE1D07;
+    color: white;
+  }
+
+  .FITT2 {
+    background: #FAEB4D;
+  }
+
+  .GNED06 {
+    background: #F5A22A;
+  }
+
+  .DCIT23 {
+    background: #239513;
+    color: white;
+  }
+
+  .ITEC50 {
+    background: #FFB7F7;
+  }
+
+  .DCIT21 {
+    background: #AD9B81;
+  }
+
+  .DCIT22 {
+    background: #505AFF;
+    color: white;
+  }
+
+
+@media (max-width: 858px){
+
+  .taas {
+    font-size: 40px;
+  }
+
+  .sy {
+    font-size: 15px;
   }
 
   td,th {
-  	font-size: 15px;
+    font-size: 15px;
   }
   .time {font-size: 13px;
-  	padding: 10px;}
+    padding: 10px;}
 
   tr td {
-  	font-size: 16px;
+    font-size: 16px;
   }
 
   p {
-  	font-size: 12px;
-  	padding: 10px;
+    font-size: 12px;
+    padding: 10px;
   }
 
   .hide {display: initial;}

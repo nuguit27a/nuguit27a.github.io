@@ -101,13 +101,17 @@ ul li ul li:hover {background: #303030;}
 
 /* Style page content */
 .laman {
+  height: 510px;
     background: #202020;
     color: #fff;
     margin-left: 250px; /* Same as the width of the sidebar */
-    padding: 130px 20px 30px 20px;
+    padding: 130px 60px 30px 60px;
     font-family: 'PT Serif', serif;
-    justify-content: all;
+    justify-content: center;
 }
+
+.laman h1 {font-size: 72px;}
+.laman p {font-size: 30px;}
 
 
 /* On smaller screens, where height is less than 450px, change the style of the sidebar (less padding and a smaller font size) */
@@ -135,100 +139,3 @@ ul li ul li:hover {background: #303030;}
    #check:checked ~  .laman{left: 200px;}
 
   }
-
-
-
-  /*      = = = = = = FAVORITES/HOBBIES = = = = = = =       */
-
-  .favs {
-    width: 90%;
-    margin: auto;
-    padding-top: 40px;
-    color: #ccc;
-    top: 50%;
-    left: 50%;
-    text-align: center;
-  }
-
-  .favs h1 {
-    color: white;
-    font-size: 62px;
-    font-weight: 600px; 
-  }
-
-  .favs p {
-    margin: 10px 0 40px;
-    font-size: 25px;
-    color: #fff;
-  }
-
-  .row {
-    padding-top: 40px;
-    display: flex;
-    justify-content: space-between;
-  }
-
-  .fav-col img {
-    width: 250px; height: 337px; object-fit: cover;
-  }
-
-  .fav-col {
-    width: 90%;
-    flex-basis: 31%;
-    background: #B60303;
-    border-radius: 10px;
-    margin-bottom: 5%;
-    padding: 30px 20px;
-    box-sizing: border-box;
-    transition: .7s;
-  }
-
-    .fav-col h3 {
-      color: #fff;
-      font-size: 23px;
-      margin: 10px 0
-    }
-    .fav-col p {
-      margin: 15px 30px;
-      font-size: 18px;
-      color: #aaa;
-      text-align:center;
-    }
-
-    .fav-col:hover {
-      box-shadow: 0 0 20px 0 rgba(250,250,250,10.6);
-    }
-
-
-@media (max-width: 1024px){
- 
-/*      = = = = = = HOBBIES/FAVORITES = = = = = = =       */
-
-  .row {
-    flex-direction: column;
-  }
-   .fav-col img {
-    width: 337px; height: 250px; object-fit: cover;
-  }
-  .favs {
-    margin: auto;
-    text-align: center;
-}
-  .favs h1 {
-    font-size: 25px;
-  }
-  .favs p {
-    font-size: 18px;
-  }
-
-/*      = = = = = = PHONE = = = = = = =       */
-
-@media (max-width: 768px) {
-  .favs {
-    margin: 40px;
-    text-align: center;
-  }
-  .fav-col img {
-  width: 250px; height: 337px; object-fit: cover;
-  }
-}
